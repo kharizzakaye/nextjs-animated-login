@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import SocialIconsSection from "../components/SocialIconsSection";
 import styles from "./login-component-1.module.css"
 
@@ -32,7 +33,7 @@ export default function Page() {
 
             <SocialIconsSection />
 
-            <span>or use your email for registration</span>
+            <span className="text-xs">or use your email for registration</span>
 
             <input className={`${styles.inputField}`} type="text" placeholder="Name" />
             <input className={`${styles.inputField}`} type="email" placeholder="Email" />
@@ -49,13 +50,14 @@ export default function Page() {
 
             <SocialIconsSection />
 
-            <span>or use your password</span>
+            <span className="text-xs">or use your password</span>
 
-            <span>or use your email password</span>
+            <span className="text-xs">or use your email password</span>
 
             <input className={`${styles.inputField}`} type="email" placeholder="Email" />
             <input className={`${styles.inputField}`} type="password" placeholder="Password" />
-            <a href="#">Forget Your Password?</a>
+            
+            <Link href="#" className="text-gray-800 text-sm no-underline my-3 mt-[15px] mb-[10px]">Forgot Password?</Link>
 
             <button className="bg-[#2da0a8]">Sign In</button>
           </form>
@@ -68,7 +70,7 @@ export default function Page() {
             <div className="togglePanel toggleLeft">
               <h1 className={`${styles.cardTitle}`}>Welcome back!</h1>
 
-              <p>Enter your personal details to use all of the site features</p>
+              <p className={`${styles.cardText}`}>Enter your personal details to use all of the site features</p>
 
               <button className="bg-transparent border border-white" id="login" onClick={handleLoginClick}>
                 Sign in
@@ -79,7 +81,7 @@ export default function Page() {
             <div className="togglePanel toggleRight">
               <h1 className={`${styles.cardTitle}`}>Hi there!</h1>
 
-              <p>Register with your personal details to use our website</p>
+              <p className={`${styles.cardText}`}>Register with your personal details to use our website</p>
 
               <button className="bg-transparent border border-white" id="register" onClick={handleRegisterClick}>
                 Sign up
