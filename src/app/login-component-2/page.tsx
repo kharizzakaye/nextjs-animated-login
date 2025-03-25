@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "./login-component-2.module.css";
+import clsx from "clsx";
 
 export default function Page() {
   // Define state to track the current animation
@@ -19,7 +20,13 @@ export default function Page() {
     <div className={`${styles.localWrapper}`}>
       <div className={`${styles.localHtml} `}>
         <div className={`wrapper relative w-[35rem] h-[50rem] ${animation}`}>
-          <div className={`${styles.formContainer} form-container sign-up`}>
+          <div className={clsx(
+            `${styles.formContainer} rotate-6 form-container sign-up`,
+            {
+              [styles.animatedSignInOnSignUpCard] : animation == "animated-signin",
+              [styles.animatedSignUpOnSignUpCard] : animation == "animated-signup",
+            }
+          )}>
             <form action="#">
               <h2 className={`${styles.cardTitle}`}>sign up</h2>
 
@@ -85,7 +92,13 @@ export default function Page() {
             </form>
           </div>
 
-          <div className={`${styles.formContainer} form-container sign-in`}>
+          <div className={clsx(
+            `${styles.formContainer} form-container sign-in`,
+            {
+              [styles.animatedSignInOnSignInCard] : animation == "animated-signin",
+              [styles.animatedSignUpOnSignInCard] : animation == "animated-signup",
+            }
+          )}>
             <form action="#">
               <h2 className={`${styles.cardTitle}`}>login</h2>
 

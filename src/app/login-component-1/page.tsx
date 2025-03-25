@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import SocialIconsSection from "../components/Social-icons-section/SocialIconsSection";
+import SocialIconsSection from "./components/SocialIconsSection";
 import styles from "./login-component-1.module.css";
 import clsx from "clsx";
 import { useState } from "react";
