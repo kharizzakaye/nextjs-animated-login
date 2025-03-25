@@ -39,7 +39,7 @@ export default function Page() {
             <input className={`${styles.inputField}`} type="email" placeholder="Email" />
             <input className={`${styles.inputField}`} type="password" placeholder="Password" />
 
-            <button className="bg-[#2da0a8]">Sign Up</button>
+            <button className={`${styles.buttons} bg-[#2da0a8]`}>Sign Up</button>
           </form>
         </div>
 
@@ -59,7 +59,7 @@ export default function Page() {
             
             <Link href="#" className="text-gray-800 text-sm no-underline my-3 mt-[15px] mb-[10px]">Forgot Password?</Link>
 
-            <button className="bg-[#2da0a8]">Sign In</button>
+            <button className={`${styles.buttons} bg-[#2da0a8]`}>Sign In</button>
           </form>
         </div>
 
@@ -72,7 +72,7 @@ export default function Page() {
 
               <p className={`${styles.cardText}`}>Enter your personal details to use all of the site features</p>
 
-              <button className="bg-transparent border border-white" id="login" onClick={handleLoginClick}>
+              <button className={`${styles.buttons} bg-transparent border border-white`} id="login" onClick={handleLoginClick}>
                 Sign in
               </button>
             </div>
@@ -83,7 +83,7 @@ export default function Page() {
 
               <p className={`${styles.cardText}`}>Register with your personal details to use our website</p>
 
-              <button className="bg-transparent border border-white" id="register" onClick={handleRegisterClick}>
+              <button className={`${styles.buttons} bg-transparent border border-white`} id="register" onClick={handleRegisterClick}>
                 Sign up
               </button>
             </div>

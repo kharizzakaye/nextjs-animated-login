@@ -4,18 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-.container button {
-  color: #fff;
-  font-size: 12px;
-  padding: 10px 45px;
-  border-radius: 8px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  margin-top: 10px;
-  cursor: pointer;
-}
-
 .signIn {
   left: 0;
   width: 50%;
