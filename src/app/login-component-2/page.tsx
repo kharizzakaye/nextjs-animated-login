@@ -29,25 +29,25 @@ export default function Page() {
               <div className="form-group">
                 <input type="text" required/>
                 {/* <FontAwesomeIcon icon={faUser} /> */}
-                <label>username</label>
+                <label className={`${styles.fieldLabel}`}>username</label>
               </div>
               
               <div className="form-group">
                 <input type="email" required/>
                 {/* <i className="fas fa-at"></i> */}
-                <label>email</label>
+                <label className={`${styles.fieldLabel}`}>email</label>
               </div>
 
               <div className="form-group">
                 <input type="password" required/>
                 {/* <i className="fas fa-lock"></i> */}
-                <label>password</label>
+                <label className={`${styles.fieldLabel}`}>password</label>
               </div>
 
               <div className="form-group">
                 <input type="password" required/>
                 {/* <i className="fas fa-lock"></i> */}
-                <label>confirm password</label>
+                <label className={`${styles.fieldLabel}`}>confirm password</label>
               </div>
 
               <button type="submit" className="btn">sign up</button>
@@ -65,13 +65,13 @@ export default function Page() {
               <div className="form-group">
                 <input type="text" required/>
                 {/* <FontAwesomeIcon icon={faUser} className="icons"/> */}
-                <label>username</label>
+                <label className={`${styles.fieldLabel}`}>username</label>
               </div>
 
               <div className="form-group">
                 <input type="password" required/>
                 {/* <i className="fas fa-lock"></i> */}
-                <label>password</label>
+                <label className={`${styles.fieldLabel}`}>password</label>
               </div>
 
               <div className="forgot-pass">
