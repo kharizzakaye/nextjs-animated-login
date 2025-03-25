@@ -2,10 +2,11 @@ import React from 'react'
 import { faFacebookF, faGithub, faGooglePlusG, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from 'next/link';
+import styles from "./SocialIconsSection.module.css"
 
 const SocialIconsSection = () => {
   return (
-    <div className="social-icons">
+    <div className={`${styles.socialIcons}`}>
         <Link href="https://en.wikipedia.org/wiki/Google%2B" target='blank'>
             <FontAwesomeIcon icon={faGooglePlusG} />
         </Link>
