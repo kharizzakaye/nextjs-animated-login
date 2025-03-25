@@ -5,9 +5,9 @@
   /* font-family: "Poppins", sans-serif; */
 }
 
-.localHtml {
+.baseFontSize {
   font-size: 62.5%;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 .formContainer {
@@ -63,6 +63,16 @@
     transition: all 0.5s ease;
     left: 0.5rem;
 } */
+
+.inputFields:focus ~ label,
+.inputFields:valid ~ label
+/* .inputFields:focus ~ .icons,
+.inputFields:valid ~ .icons  */
+{
+  top: 0 !important;
+  font-size: 1.2rem !important;
+  background-color: var(--whiteColor);
+}
 
 .inputFields {
   width: 100%;

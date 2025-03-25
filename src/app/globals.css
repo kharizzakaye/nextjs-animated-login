@@ -4,38 +4,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-html {
+/* html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-}
+} */
 
 :root {
   --mainColor: #89216b;
   --whiteColor: #ffffff;
   --titleColor: #555555;
   --labelColor: #333333;
-}
-
-body {
-  background: linear-gradient(to right, #da4453, var(--mainColor));
-  font-weight: 400;
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
-  overflow: hidden;
-}
-
-@media (min-width: 540px) {
-  .wrapper {
-    width: 40rem;
-  }
-}
-
-form .form-group input:focus ~ label,
-form .form-group input:valid ~ label,
-form .form-group input:focus ~ .icons,
-form .form-group input:valid ~ .icons {
-  top: 0 !important;
-  font-size: 1.2rem !important;
-  background-color: var(--whiteColor);
 }

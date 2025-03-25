@@ -17,11 +17,16 @@ export default function Page() {
   };
 
   return (
-    <div className={`${styles.localWrapper}`}>
-      <div className={`${styles.localHtml} `}>
-        <div className={`wrapper relative w-[35rem] h-[50rem] ${animation}`}>
+    <div className={`${styles.baseFontSize}`}>
+
+<div className={`${styles.localWrapper}`}>
+      <div className="bg-gradient-to-r from-[#da4453] to-[var(--mainColor)] font-normal min-h-screen grid place-content-center overflow-hidden">
+
+        <div className={`relative w-[35rem] sm:w-[40rem] h-[50rem] ${animation}`}>
+
+          {/* sign up card */}
           <div className={clsx(
-            `${styles.formContainer} rotate-6 form-container sign-up`,
+            `${styles.formContainer} rotate-6`,
             {
               [styles.animatedSignInOnSignUpCard] : animation == "animated-signin",
               [styles.animatedSignUpOnSignUpCard] : animation == "animated-signup",
@@ -30,7 +35,7 @@ export default function Page() {
             <form action="#">
               <h2 className={`${styles.cardTitle}`}>sign up</h2>
 
-              <div className={`${styles.formGroup} form-group`}>
+              <div className={`${styles.formGroup}`}>
                 <input
                   type="text"
                   required
@@ -40,7 +45,7 @@ export default function Page() {
                 <label className={`${styles.fieldLabel}`}>username</label>
               </div>
 
-              <div className={`${styles.formGroup} form-group`}>
+              <div className={`${styles.formGroup}`}>
                 <input
                   type="email"
                   required
@@ -50,7 +55,7 @@ export default function Page() {
                 <label className={`${styles.fieldLabel}`}>email</label>
               </div>
 
-              <div className={`${styles.formGroup} form-group`}>
+              <div className={`${styles.formGroup}`}>
                 <input
                   type="password"
                   required
@@ -60,7 +65,7 @@ export default function Page() {
                 <label className={`${styles.fieldLabel}`}>password</label>
               </div>
 
-              <div className={`${styles.formGroup} form-group`}>
+              <div className={`${styles.formGroup}`}>
                 <input
                   type="password"
                   required
@@ -72,16 +77,16 @@ export default function Page() {
                 </label>
               </div>
 
-              <button type="submit" className={`${styles.buttons} btn`}>
+              <button type="submit" className={`${styles.buttons}`}>
                 sign up
               </button>
 
-              <div className={`link text-center text-[1.4rem] text-[var(--labelColor)] my-10`}>
+              <div className={`text-center text-[1.4rem] text-[var(--labelColor)] my-10`}>
                 <p>
                   You already have an account?
                   <a
                     href="#"
-                    className="signin-link  capitalize text-[var(--mainColor)] no-underline font-semibold transition-all duration-500 ease-in-out hover:text-[#da4453]"
+                    className="capitalize text-[var(--mainColor)] no-underline font-semibold transition-all duration-500 ease-in-out hover:text-[#da4453]"
                     onClick={handleSignInClick}
                   >
                     {" "}
@@ -92,6 +97,7 @@ export default function Page() {
             </form>
           </div>
 
+          {/* sign in card */}
           <div className={clsx(
             `${styles.formContainer} form-container sign-in`,
             {
@@ -150,8 +156,12 @@ export default function Page() {
               </div>
             </form>
           </div>
+
         </div>
+        
       </div>
+    </div>
+
     </div>
   );
 }
