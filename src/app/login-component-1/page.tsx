@@ -34,9 +34,9 @@ export default function Page() {
 
             <span>or use your email for registration</span>
 
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
+            <input className={`${styles.inputField}`} type="text" placeholder="Name" />
+            <input className={`${styles.inputField}`} type="email" placeholder="Email" />
+            <input className={`${styles.inputField}`} type="password" placeholder="Password" />
 
             <button className="bg-[#2da0a8]">Sign Up</button>
           </form>
@@ -53,8 +53,8 @@ export default function Page() {
 
             <span>or use your email password</span>
 
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
+            <input className={`${styles.inputField}`} type="email" placeholder="Email" />
+            <input className={`${styles.inputField}`} type="password" placeholder="Password" />
             <a href="#">Forget Your Password?</a>
 
             <button className="bg-[#2da0a8]">Sign In</button>
