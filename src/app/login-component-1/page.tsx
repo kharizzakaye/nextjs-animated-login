@@ -24,7 +24,7 @@ export default function Page() {
         m-0 p-0 box-border
         bg-gradient-to-r from-[#e2e2e2] to-[#c9d6ff] flex items-center justify-center flex-col h-screen"
     >
-      <div className="container" id="container">
+      <div className="container bg-white rounded-[30px] shadow-lg relative overflow-hidden w-[768px] max-w-full min-h-[480px]" id="container">
         {/* create account container */}
         <div className={`${styles.formContainer} signUp`}>
           <form>
