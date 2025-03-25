@@ -38,7 +38,7 @@ export default function Page() {
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
 
-            <button>Sign Up</button>
+            <button className="bg-[#2da0a8]">Sign Up</button>
           </form>
         </div>
 
@@ -57,7 +57,7 @@ export default function Page() {
             <input type="password" placeholder="Password" />
             <a href="#">Forget Your Password?</a>
 
-            <button>Sign In</button>
+            <button className="bg-[#2da0a8]">Sign In</button>
           </form>
         </div>
 
@@ -70,7 +70,7 @@ export default function Page() {
 
               <p>Enter your personal details to use all of the site features</p>
 
-              <button className="hiddenButton" id="login" onClick={handleLoginClick}>
+              <button className="bg-transparent border border-white" id="login" onClick={handleLoginClick}>
                 Sign in
               </button>
             </div>
@@ -81,7 +81,7 @@ export default function Page() {
 
               <p>Register with your personal details to use our website</p>
 
-              <button className="hiddenButton" id="register" onClick={handleRegisterClick}>
+              <button className="bg-transparent border border-white" id="register" onClick={handleRegisterClick}>
                 Sign up
               </button>
             </div>

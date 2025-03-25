@@ -37,11 +37,6 @@
   cursor: pointer;
 }
 
-.container button.hiddenButton {
-  background-color: transparent;
-  border-color: #fff;
-}
-
 .container form {
   background-color: #fff;
   display: flex;
