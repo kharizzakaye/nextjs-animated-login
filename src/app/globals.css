@@ -39,46 +39,6 @@ body {
   }
 }
 
-.wrapper .form-container form .form-group {
-  position: relative;
-  width: 32rem;
-  margin: 3rem 0;
-}
-
-/* .wrapper .form-container form .form-group .icons, */
-/* .wrapper .form-container form .form-group label {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.6rem;
-  text-transform: capitalize;
-  color: var(--labelColor);
-  padding: 0 0.5rem;
-  pointer-events: none;
-  transition: all 0.5s ease;
-} */
-
-/* .wrapper .form-container form .form-group .icons {
-  left: 0.5rem;
-} */
-
-.wrapper .form-container form .form-group label {
-  left: 2.5rem;
-}
-
-.wrapper .form-container form .form-group input {
-  width: 100%;
-  height: 4rem;
-  padding: 0 1rem;
-  border-radius: 0.5rem;
-  border: none;
-  outline: none;
-  border: 0.1rem solid var(--labelColor);
-  font-size: 1.6rem;
-  color: var(--labelColor);
-  background: transparent;
-}
-
 form .form-group input:focus ~ label,
 form .form-group input:valid ~ label,
 form .form-group input:focus ~ .icons,
@@ -86,56 +46,6 @@ form .form-group input:valid ~ .icons {
   top: 0 !important;
   font-size: 1.2rem !important;
   background-color: var(--whiteColor);
-}
-
-.wrapper .form-container form .forgot-pass {
-  margin: -1.5rem 0 1.5rem;
-}
-
-.wrapper .form-container form .forgot-pass a {
-  color: var(--labelColor);
-  text-decoration: none;
-  font-size: 1.4rem;
-  text-transform: capitalize;
-  transform: all 0.5s ease;
-}
-
-.wrapper .form-container form .forgot-pass a:hover {
-  color: var(--mainColor);
-}
-
-.wrapper .form-container form .btn {
-  background: linear-gradient(to right, #da4453, var(--mainColor));
-  color: var(--whiteColor);
-  text-transform: capitalize;
-  width: 100%;
-  height: 4rem;
-  font-size: 1.6rem;
-  font-weight: 500;
-  outline: none;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  box-shadow: 0 0.2rem 1rem rgba(0 0 0 / 0.4);
-}
-
-.wrapper .form-container form .link {
-  text-align: center;
-  font-size: 1.4rem;
-  color: var(--labelColor);
-  margin: 2.5rem 0;
-}
-
-.wrapper .form-container form .link a {
-  text-transform: capitalize;
-  color: var(--mainColor);
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.5s ease;
-}
-
-.wrapper .form-container form .link a:hover {
-  color: #da4453;
 }
 
 .wrapper .sign-up {
