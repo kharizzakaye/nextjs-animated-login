@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
 import SocialIconsSection from "../components/SocialIconsSection";
+import styles from "./login-component-1.module.css"
 
 export default function Page() {
   const handleRegisterClick = () => {
@@ -26,9 +26,9 @@ export default function Page() {
     >
       <div className="container" id="container">
         {/* create account container */}
-        <div className="formContainer signUp">
+        <div className={`${styles.formContainer} signUp`}>
           <form>
-            <h1>Create Account</h1>
+            <h1 className={`${styles.cardTitle}`}>Create Account</h1>
 
             <SocialIconsSection />
 
@@ -43,9 +43,9 @@ export default function Page() {
         </div>
 
         {/* login container */}
-        <div className="formContainer signIn">
+        <div className={`${styles.formContainer} signIn`}>
           <form>
-            <h1>Sign in</h1>
+            <h1 className={`${styles.cardTitle}`}>Sign in</h1>
 
             <SocialIconsSection />
 
@@ -66,7 +66,7 @@ export default function Page() {
           <div className="toggle">
             {/* left toggle */}
             <div className="togglePanel toggleLeft">
-              <h1>Welcome back!</h1>
+              <h1 className={`${styles.cardTitle}`}>Welcome back!</h1>
 
               <p>Enter your personal details to use all of the site features</p>
 
@@ -77,7 +77,7 @@ export default function Page() {
 
             {/* right toggle */}
             <div className="togglePanel toggleRight">
-              <h1>Hi there!</h1>
+              <h1 className={`${styles.cardTitle}`}>Hi there!</h1>
 
               <p>Register with your personal details to use our website</p>
 
